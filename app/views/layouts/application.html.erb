@@ -12,6 +12,21 @@
   </head>
 
   <body>
+    <div class="col-sm-12 col-sm-offset-2">
+      <div class="d-flex p-2 bd-highlight justify-content-between">
+        <p>
+          <%= link_to restaurants_path do %>
+            Restaurants
+          <% end %>
+        </p>
+        <p>
+          <%= link_to new_restaurant_path do %>
+            <i class="fa fa-plus"></i> Add a new restaurant
+          <% end %>
+        </p>
+      </div>
+    </div>
+    <hr>
     <%= yield %>
   </body>
 </html>
